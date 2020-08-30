@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Matt's Test Page</title>
+	<meta name="description" content="Matt's Test Page">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Project CSS -->
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: radial-gradient(#264d73, #132639)
+		}
+
+		hr {
+			width: 90%;
+			margin: 2rem 0;
+			border: 1px solid rgba(200, 200, 200, .5);
+		}
+
+		h1, p {
+			color: #eeeeee;
+			text-align: center;
+		}
+
+		p:first-of-type {
+			margin-bottom: 0;
+		}
+
+		#mobile {
+			display: none;
+		}
+
+		@media only screen and (max-width: 600px) {
+			#desktop { display: none }
+			#mobile { display: block }
+		}
+	</style>
+</head>
+<body>
+	<h1>Matt's Test Page</h1>
+	<p>Web page for testing DNS setup</p>
+	<hr/>
+	<p id="desktop">Desktop</p>
+	<p id="mobile">Mobile</p>
+</body>
+</html>
